@@ -1,0 +1,54 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "commonjs",
+    "target": "ES2022",
+    "types": ["node"],
+
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    "sourceMap": true,
+
+    // ❌ removed (not needed for backend apps right now)
+    // "declaration": true,
+    // "declarationMap": true,
+
+    // Stricter Typechecking Options
+    // ⚠️ keep strict but avoid noisy extreme flags for now
+    "strict": true,
+
+    // ❌ removed advanced strict flags:
+    // "noUncheckedIndexedAccess": true,
+    // "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    // ❌ removed for now (too frontend/edge-case oriented for your stage)
+    // "jsx": "react-jsx",
+    // "verbatimModuleSyntax": true,
+    // "isolatedModules": true,
+    // "noUncheckedSideEffectImports": true,
+    // "moduleDetection": "force",
+
+    "skipLibCheck": true
+  },
+
+  "exclude": ["node_modules", "dist", "prisma.config.ts"]
+}
